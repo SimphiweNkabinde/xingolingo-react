@@ -10,16 +10,11 @@ export default function Splash() {
     }, 2000);
   }, []);
   return (
-    <div className="h-screen flex items-center gap-12 text-white flex-col justify-center">
-      <h1
-        // style={{ color: "#1E3A5F" }}
-        className="text-5xl font-bold text-center"
-      >
-        Xingo Lingo
-      </h1>
+    <div className="h-screen flex items-center gap-12 flex-col justify-center">
+      <h1 className="text-5xl font-bold text-center">Xingo Lingo</h1>
       <img
-        src="/images/xingo-culture.png"
-        className="w-20 animate-bounce"
+        src="/images/xingo-face-smile.png"
+        className="w-20 animate-bounce rounded-full"
         alt=""
       />
       <p>Learn our stories. Speak with pride.</p>

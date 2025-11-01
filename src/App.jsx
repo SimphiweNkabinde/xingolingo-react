@@ -18,10 +18,15 @@ import HomeMap from "./screens/HomeMap";
 import StoryLesson from "./screens/StoryLesson";
 import ProgressRewards from "./screens/ProgressRewards";
 import SplashStart from "./screens/SplashStart";
+import Lesson from "./screens/Lesson";
+import Lessons from "./screens/Lessons";
 
 export default function App() {
   return (
-    <div style={{ background: "#1E3A5F" }} className="min-h-screen py-1 px-6">
+    <div
+      // style={{ background: "#1E3A5F" }}
+      className="min-h-screen py-1 px-5 bg-gradient-to-br from-blue-50 via-white to-green-50 text-gray-900"
+    >
       <ProgressProvider>
         <Router>
           <Routes>
@@ -36,6 +41,8 @@ export default function App() {
             <Route path="/home" element={<HomeMap />} />
             <Route path="/story/:id" element={<StoryLesson />} />
             <Route path="/rewards" element={<ProgressRewards />} />
+            <Route path="/lesson/:id" element={<Lesson />} />
+            <Route path="/lessons" element={<Lessons />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Router>
