@@ -1,7 +1,5 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import AudioPlayer from "../components/AudioPlayer";
-import RecordPractice from "../components/RecordPractice";
 import { useProgress } from "../context/ProgressContext";
 
 export default function StoryLesson() {

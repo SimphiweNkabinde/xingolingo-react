@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AudioPlayer from "../components/AudioPlayer";
 import RecordPractice from "../components/RecordPractice";
+import Button from "../components/UI/Button";
 
 const quiz = [
   {
@@ -37,15 +38,16 @@ export default function SampleLesson() {
   const [answerIsCorrect, setAnswerIsCorrect] = useState(true);
   const navigate = useNavigate();
   return (
-    <div className="h-screen flex items-center flex-col justify-center gap-10 text-white">
+    <div className="h-screen flex items-center flex-col justify-center gap-10">
       <h2 className="text-4xl mb-4">First Lesson</h2>
 
       <p className="mb-2 text-2xl">{quiz[currentStep].intro}</p>
       <div>
         <p className="mb-5">{quiz[currentStep].question}</p>
-        <div className="flex flex-col w-full gap-5">
+
+        <div className="flex flex-col gap-5 w-full max-w-md">
           {quiz[currentStep].options.map((option) => (
-            <button
+            <Button
               key={option.value}
               onClick={() => {
                 if (option.correct) {
@@ -61,10 +63,9 @@ export default function SampleLesson() {
                 }
                 setShowFeedback(true);
               }}
-              className="w-full md:w-auto bg-white text-black hover:bg-green-100 active:bg-green-700 py-3 font-semibold capitalize px-5 rounded-xl"
             >
               {option.value}
-            </button>
+            </Button>
           ))}
         </div>
       </div>

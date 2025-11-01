@@ -10,7 +10,7 @@ export default function Splash() {
     }, 2000);
   }, []);
   return (
-    <div className="h-screen flex items-center gap-12 text-white flex-col justify-center">
+    <div className="h-screen flex items-center gap-12 flex-col justify-center">
       <h1
         // style={{ color: "#1E3A5F" }}
         className="text-5xl font-bold text-center"
