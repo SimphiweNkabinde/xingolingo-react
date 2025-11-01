@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../components/UI/Button";
 import { useNavigate } from "react-router-dom";
 
-export default function LessonComplete({ totalQuestions, score }) {
+export default function LessonComplete({ totalQuestions, score, lessonId }) {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const completeLessons =
+      JSON.parse(localStorage.getItem("completed_lessons")) || [];
+    completeLessons.push(lessonId);
+
+    localStorage.setItem("completed_lessons", JSON.stringify(completeLessons));
+  }, []);
   return (
     <div className="text-center">
       <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -43,7 +51,7 @@ export default function LessonComplete({ totalQuestions, score }) {
         </p>
       </div>
       <div>
-        <Button onClick={() => navigate("/lessons")} variant="primary">
+        <Button onClick={() => navigate("/profile")} variant="primary">
           Back to Lessons
         </Button>
       </div>

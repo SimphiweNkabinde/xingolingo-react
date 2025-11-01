@@ -64,6 +64,7 @@ export default function Lesson() {
         )}
         {currentQuestion >= lesson.questions.length && (
           <LessonComplete
+            lessonId={lesson.id}
             totalQuestions={lesson.questions.length}
             score={lesson.questions.length}
           />
