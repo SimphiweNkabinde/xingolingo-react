@@ -7,7 +7,7 @@ export default function Splash() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/start");
-    }, 2000);
+    }, 5000);
   }, []);
   return (
     <div className="h-screen flex items-center gap-12 flex-col justify-center">
