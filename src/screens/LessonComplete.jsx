@@ -31,7 +31,7 @@ export default function LessonComplete({ totalQuestions, score }) {
       <p className="text-gray-600 mb-6">Great Job on Completing this lesson</p>
       <img
         className="rounded-xl w-15 animate-bounce mx-auto my-4"
-        src="/images/xingo-celebrate.png"
+        src="/images/xingo-celebrate.webp"
         alt=""
       />
       <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6 mb-6">
