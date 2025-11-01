@@ -13,7 +13,7 @@ export default function Splash() {
     <div className="h-screen flex items-center gap-12 flex-col justify-center">
       <h1 className="text-5xl font-bold text-center">Xingo Lingo</h1>
       <img
-        src="/images/xingo-face-smile.png"
+        src="/images/xingo-face-smile.webp"
         className="w-20 animate-bounce rounded-full"
         alt=""
       />

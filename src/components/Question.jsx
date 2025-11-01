@@ -110,7 +110,7 @@ export default function Question({
             className={`rounded-full w-15 animate-${
               isCorrect ? "bounce" : "pulse"
             }`}
-            src={`/images/xingo-${isCorrect ? "happy" : "sad"}.png`}
+            src={`/images/xingo-${isCorrect ? "happy" : "sad"}.webp`}
             alt=""
           />
         </div>
