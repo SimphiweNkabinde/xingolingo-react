@@ -41,7 +41,7 @@ export default function App() {
             <Route path="/home" element={<HomeMap />} />
             <Route path="/story/:id" element={<StoryLesson />} />
             <Route path="/rewards" element={<ProgressRewards />} />
-            <Route path="/lesson" element={<Lesson />} />
+            <Route path="/lesson/:id" element={<Lesson />} />
             <Route path="/lessons" element={<Lessons />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

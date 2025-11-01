@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import Button from "../components/UI/Button";
+import { lessons } from "../data/lessons";
 
 export default function DailyGoal() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function DailyGoal() {
 
   const setGoal = (goal) => {
     setProfile((p) => ({ ...p, goal }));
-    navigate("/lesson");
+    navigate(`/lesson/${lessons[0].id}`);
   };
 
   return (
