@@ -9,11 +9,11 @@ import NumberInput from "../components/UI/NumberInput";
 export default function ProfileSetup() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(0);
 
   useEffect(() => {
     const profile = localStorage.getItem("profile_name");
-    // if (profile) navigate("/lessons");
+    if (profile) navigate("/lessons");
   }, []);
 
   const forms = [
