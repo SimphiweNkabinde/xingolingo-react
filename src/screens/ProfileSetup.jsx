@@ -107,10 +107,8 @@ export default function ProfileSetup() {
               <path d="M20 6 9 17l-5-5"></path>
             </svg>
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Profile Setup Complete
-          </h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-3xl font-bold mb-2">Profile Setup Complete</h2>
+          <p className="mb-6">
             Welcome aboard <span className="capitalize">{name}</span>
           </p>
           <img

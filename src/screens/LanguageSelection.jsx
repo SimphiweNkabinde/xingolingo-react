@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import { languages } from "../data/languages";
-import AudioPlayer from "../components/AudioPlayer";
 import Button from "../components/UI/Button";
 
 export default function LanguageSelection() {
@@ -15,10 +14,7 @@ export default function LanguageSelection() {
   };
 
   return (
-    <div
-      // style={{ background: "#1E3A5F" }}
-      className="h-screen flex items-center flex-col justify-center gap-10"
-    >
+    <div className="h-screen flex items-center flex-col justify-center gap-10">
       <h2 className="text-2xl font-semibold mb-4 text-center">
         Which language do you want to learn?
       </h2>

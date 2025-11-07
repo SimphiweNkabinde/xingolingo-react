@@ -7,7 +7,7 @@ export default function HomeMap() {
 
   return (
     <div className="h-screen flex items-center flex-col justify-center gap-10">
-      <h2 className="text-2xl font-semibold mb-4 text-center text-white">
+      <h2 className="text-2xl font-semibold mb-4 text-center">
         Choose Your Story
       </h2>
       <div className="grid gap-4">

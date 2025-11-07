@@ -11,7 +11,7 @@ export default function SplashStart() {
     >
       <h1 className="text-4xl font-semibold text-center">Ready?</h1>
       <div className="flex flex-col gap-5 w-full max-w-md">
-        <Button variant="primary" onClick={() => navigate("/language")}>
+        <Button variant="success" onClick={() => navigate("/language")}>
           Let's Begin
         </Button>
       </div>
