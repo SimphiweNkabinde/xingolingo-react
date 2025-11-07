@@ -17,7 +17,7 @@ export default function Splash() {
         className="w-20 animate-bounce rounded-full"
         alt=""
       />
-      <p>Learn our stories. Speak with pride.</p>
+      <p>Speak the Lingo. Feel the Culture.</p>
     </div>
   );
 }
