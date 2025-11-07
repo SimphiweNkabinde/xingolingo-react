@@ -9,11 +9,11 @@ import NumberInput from "../components/UI/NumberInput";
 export default function ProfileSetup() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(3);
 
   useEffect(() => {
     const profile = localStorage.getItem("profile_name");
-    if (profile) navigate("/lessons");
+    // if (profile) navigate("/lessons");
   }, []);
 
   const forms = [
@@ -91,7 +91,7 @@ export default function ProfileSetup() {
 
       {step == forms.length && (
         <div className="text-center">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

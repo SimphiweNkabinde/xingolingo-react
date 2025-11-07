@@ -14,7 +14,7 @@ export default function LessonComplete({ totalQuestions, score, lessonId }) {
   }, []);
   return (
     <div className="text-center">
-      <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+      <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -25,7 +25,7 @@ export default function LessonComplete({ totalQuestions, score, lessonId }) {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-trophy w-10 h-10 text-green-600"
+          className="lucide lucide-trophy w-10 h-10 text-yellow-400"
         >
           <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
           <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
