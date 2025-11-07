@@ -48,10 +48,9 @@ export default function Question({
   return (
     <div className="flex flex-col gap-7">
       <div>
-        <p className="text-gray-600 text-sm mb-4">{title}:</p>
+        <p className="text-sm mb-4">{title}:</p>
         <p className="text-lg text-semibold mb-2">{description}</p>
-        <div className="bg-gray-100 rounded-lg p-4">
-          {/* <p className="text-sm text-gray-500 mb-2">Example:</p> */}
+        <div className="bg-cyan-700 rounded-lg px-4 py-6 opacity-75">
           <i>{example}</i>
         </div>
       </div>

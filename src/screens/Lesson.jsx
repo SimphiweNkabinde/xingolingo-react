@@ -18,7 +18,7 @@ export default function Lesson() {
       <div className="pt-5">
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-gray-900">{lesson.title}</h2>
+            <h2 className="text-2xl font-bold">{lesson.title}</h2>
             <div className="flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Lesson() {
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+              className="bg-yellow-500 h-2 rounded-full transition-all duration-300"
               style={{
                 width: `${(currentQuestion / lesson.questions.length) * 100}%`,
               }}

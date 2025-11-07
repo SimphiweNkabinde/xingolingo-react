@@ -35,14 +35,14 @@ export default function LessonComplete({ totalQuestions, score, lessonId }) {
           <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
         </svg>
       </div>
-      <h2 className="text-3xl font-bold text-gray-900 mb-2">Lesson Complete</h2>
-      <p className="text-gray-600 mb-6">Great Job on Completing this lesson</p>
+      <h2 className="text-3xl font-bold mb-2">Lesson Complete</h2>
+      <p className="mb-6">Great Job on Completing this lesson</p>
       <img
         className="rounded-xl w-15 animate-bounce mx-auto my-4"
         src="/images/xingo-celebrate.webp"
         alt=""
       />
-      <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6 mb-6">
+      <div className="bg-sky-100 rounded-xl p-6 mb-6">
         <div className="text-5xl font-bold text-blue-600 mb-2">
           {(score / totalQuestions) * 100}%
         </div>
