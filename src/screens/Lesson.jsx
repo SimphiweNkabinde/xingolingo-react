@@ -19,7 +19,7 @@ export default function Lesson() {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold">{lesson.title}</h2>
-            <div className="flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+            <div className="flex items-center gap-2 px-3 py-1 bg-yellow-500 rounded-full text-sm font-medium">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

@@ -23,6 +23,8 @@ export default function Button({
       "flex items-center justify-center cursor-pointer gap-3 p-4 rounded-xl border-2 transition-all hover:shadow-md border-green-500 hover:border-gray-300  active:border-green-500 active:bg-green-50",
     secondary:
       "w-full bg-gray-400 hover:bg-gray-500 text-white font-medium py-4 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl",
+    warning:
+      "w-full bg-yellow-400 hover:bg-yellow-500 text-white font-medium py-4 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl",
   };
   return (
     <button

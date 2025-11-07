@@ -109,7 +109,7 @@ export default function ProfileSetup() {
           </div>
           <h2 className="text-3xl font-bold mb-2">Profile Setup Complete</h2>
           <p className="mb-6">
-            Welcome aboard <span className="capitalize">{name}</span>
+            Welcome to the village <span className="capitalize">{name}</span>
           </p>
           <img
             className="rounded-xl w-15 animate-bounce mx-auto my-4"
