@@ -17,7 +17,7 @@ export default function UserType() {
       <h2 className="text-2xl font-semibold mb-4 text-center">Who are you?</h2>
       <div className="flex flex-col gap-5 w-full max-w-md">
         {["🧑‍🎓 Student", "🧳 Tourist", "Missionary"].map((type) => (
-          <Button key={type} onClick={() => chooseType(type)}>
+          <Button variant="success" key={type} onClick={() => chooseType(type)}>
             <span className="font-semibold">{type}</span>
           </Button>
         ))}

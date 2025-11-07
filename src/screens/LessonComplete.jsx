@@ -42,16 +42,16 @@ export default function LessonComplete({ totalQuestions, score, lessonId }) {
         src="/images/xingo-celebrate.webp"
         alt=""
       />
-      <div className="bg-sky-100 rounded-xl p-6 mb-6">
-        <div className="text-5xl font-bold text-blue-600 mb-2">
+      <div className="bg-yellow-500 rounded-xl p-6 mb-6">
+        <div className="text-5xl font-bold mb-2">
           {(score / totalQuestions) * 100}%
         </div>
-        <p className="text-gray-600">
+        <p>
           {score} out of {totalQuestions} complete
         </p>
       </div>
       <div>
-        <Button onClick={() => navigate("/profile")} variant="primary">
+        <Button onClick={() => navigate("/profile")} variant="success">
           Back to Lessons
         </Button>
       </div>

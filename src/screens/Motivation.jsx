@@ -19,7 +19,11 @@ export default function Motivation() {
       </h2>
       <div className="flex flex-col gap-5 w-full max-w-md">
         {motivations.map((m) => (
-          <Button key={m} onClick={() => navigate("/daily-goal")}>
+          <Button
+            variant="success"
+            key={m}
+            onClick={() => navigate("/daily-goal")}
+          >
             {m}
           </Button>
         ))}

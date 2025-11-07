@@ -26,7 +26,11 @@ export default function DailyGoal() {
       </h2>
       <div className="flex flex-col gap-5 w-full max-w-md">
         {goals.map((g) => (
-          <Button key={g.value} onClick={() => setGoal(g.value)}>
+          <Button
+            variant="success"
+            key={g.value}
+            onClick={() => setGoal(g.value)}
+          >
             {g.label}
           </Button>
         ))}

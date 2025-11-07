@@ -20,7 +20,11 @@ export default function LanguageSelection() {
       </h2>
       <div className="flex flex-col gap-5 w-full max-w-md">
         {languages.map((lang) => (
-          <Button key={lang.name} onClick={() => selectLanguage(lang)}>
+          <Button
+            variant="success"
+            key={lang.name}
+            onClick={() => selectLanguage(lang)}
+          >
             <span className="font-semibold">{lang.name}</span>
           </Button>
         ))}

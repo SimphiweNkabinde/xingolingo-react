@@ -3,7 +3,7 @@ import Button from "./UI/Button";
 
 function setButtonVariant(isSelected, isCorrect) {
   if (isCorrect == null && isSelected) {
-    return "primary-outline";
+    return "warning";
   }
 
   if (isSelected && isCorrect === false) {
